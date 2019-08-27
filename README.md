@@ -2,7 +2,7 @@
 Wake-On-LAN implementation for Libvirt to start-up libvirt guests
 # Usage
 
-./libvirt-wol -d <device> [-p password] [-c connection-uri]
+./libvirt-wol -d device [-p password] [-c connection-uri]
 
 where:
 - device is typically the bridge to bind on to listen to WoL requests.
