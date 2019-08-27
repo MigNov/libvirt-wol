@@ -185,7 +185,7 @@ void exit_handler(void) {
 int main(int argc, char *argv[])
 {
     if (parse_args(argc, argv) != 0) {
-        fprintf(stderr, "Error: MAC address or interface name is missing\n");
+        fprintf(stderr, "Error: Interface name to check for WoL packet is missing\n");
         return 1;
     }
 
