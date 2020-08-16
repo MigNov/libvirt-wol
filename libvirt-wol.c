@@ -92,7 +92,7 @@ int domain_start(char *mac_address)
     virConnectPtr cptr;
     virDomainPtr *domains;
 
-    cptr = virConnectOpen(NULL);
+    cptr = virConnectOpen(connection_uri);
     ret = virConnectListAllDomains(cptr, &domains, VIR_CONNECT_LIST_DOMAINS_INACTIVE);
     for (i = 0; i < ret; i++) {
 	char *xml = virDomainGetXMLDesc(domains[i], 0);
